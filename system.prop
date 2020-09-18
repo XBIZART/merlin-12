@@ -11,6 +11,9 @@ ro.vendor.audio.voice.volume.boost=manual
 # Brand
 Build.BRAND=MTK
 
+# Blurs
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 persist.camera.dualcal.state=-1
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
