@@ -65,6 +65,12 @@ TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_merlin
 TARGET_RECOVERY_DEVICE_MODULES := libinit_merlin
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_BOOT_HEADER_VERSION := 2
