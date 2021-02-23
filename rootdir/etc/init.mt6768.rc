@@ -66,6 +66,8 @@ on post-fs
     
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
 
+mkdir /data/misc/logd 0700 logd log
+
 on post-fs-data
     # Correct VideoCodec permission
     chmod 0666 /dev/video0
@@ -77,3 +79,8 @@ on boot
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
+
+service logcatd /system/bin/logcat -b all -f /data/misc/logd/logcat -r 256
+class main
+user root
+group root
