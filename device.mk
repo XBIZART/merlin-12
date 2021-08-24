@@ -31,9 +31,14 @@ $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
+
+# Apn
+PRODUCT_COPY_FILES += \
+   $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 # CameraGo
 PRODUCT_PACKAGES += \
