@@ -114,3 +114,9 @@ persist.dbg.wfc_avail_ovr=1
 # Iorap
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# Debug
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
