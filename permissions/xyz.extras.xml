@@ -138,6 +138,8 @@
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.DUMP"/>
+	<permission name="android.permission.FORCE_STOP_PACKAGES"/>
+	<permission name="android.permission.WRITE_APN_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.yadayada">
@@ -1239,5 +1241,9 @@
 
     <privapp-permissions package="com.google.android.GoogleCameraNext">
         <permission name="android.permission.BIND_WALLPAPER" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings">
+	<permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 </permissions>
