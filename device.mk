@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
 
 # IMS
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+# $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
