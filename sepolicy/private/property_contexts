@@ -1,2 +1,8 @@
 # MTK PQ
 vendor.sys.mtk_aal.     u:object_r:mtk_pq_prop:s0
+
+# Graphics
+ro.gfx.driver.1          u:object_r:graphics_config_prop:s0
+
+# Recovery
+ro.build.expect.        u:object_r:exported_default_prop:s0
