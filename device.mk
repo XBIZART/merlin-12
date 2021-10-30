@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/id.xyz_android_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/id.xyz_android_permissions.xml
 
 # Dynamic Partitions 
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
