@@ -1,3 +1,7 @@
+## NON OSS A12
+
+
+
 The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from Xiaomi announced in April 2020.
 
 ## Device specifications
